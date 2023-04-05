@@ -1,8 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0045)http://6.869.csail.mit.edu/fa19/schedule.html -->
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<!--	<script async src="https://www.googletagmanager.com/gtag/js?id=G-WLX2Z5QLG8"></script>-->
 	<script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
@@ -10,9 +7,6 @@
 
 	  gtag('config', 'G-WLX2Z5QLG8');
 	</script>
-
-
-
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -48,12 +42,8 @@ $(document).ready(function () {
     </tbody>
   </table>
 <p class="author">
-<!--    <span class="author"><a target="_blank" href="https://omerbt.github.io/webpage">Omer Bar-Tal</a>&nbsp;<sup>*1</sup></span>-->
-<!--    <span class="author"><a target="_blank" href="https://lioryariv.github.io/">Lior Yariv&nbsp;</a><sup>*1</sup></span>-->
-<!--	<span class="author"><a target="_blank" href="https://www.wisdom.weizmann.ac.il/~ylipman/">Yaron Lipman</a>&nbsp;<sup>1,2</sup></span>-->
-<!--    <span class="author"><a target="_blank" href="https://www.weizmann.ac.il/math/dekel/">Tali Dekel</a>&nbsp;<sup>1&nbsp;</sup></span>-->	
 	<span class="author"><a target="_blank">Hao Wang</a>&nbsp;</span>
-	<span class="author"><a target="_blank">Libo Zhang&nbsp;</a><sup></sup></span>
+	<span class="author"><a target="_blank" href="https://isrc.iscas.ac.cn/zhanglibo/">Libo Zhang&nbsp;</a><sup></sup></span>
 	<span class="author"><a target="_blank" href="https://hengfan2010.github.io">Heng Fan</a>&nbsp;</span>
   <span class="author"><a target="_blank">Tiejian Luo</a></span>
   <span class="author"><a target="_blank" href="https://www3.cs.stonybrook.edu/~hling/">Haibin Ling</a>&nbsp;</span>
@@ -62,24 +52,87 @@ $(document).ready(function () {
       <tbody align="center">
     <tr>
         <td></td>
-<!--        <td style="text-align: right; width: 17%"><img src="./pics/wis_logo.jpg" height="48" alt=""></td>-->
-<!--        <td style="text-align: center; ">&nbsp;<sup>&nbsp;</sup>&nbsp;<sup>1&nbsp;&nbsp;</sup>Weizmann Institute of Science &nbsp;<sup>2&nbsp;</sup>Meta AI &nbsp;*equal contribution</td>-->
         <td style="text-align: center; ">&nbsp;<sup>&nbsp;</sup>&nbspUniversity of Chinese Academy of Scienence &nbsp;&nbsp;Institute of Software, CAS &nbsp;&nbsp;Dept. of Computer Science & Engineering, UNT &nbsp;&nbsp;Dept. of Computer Science, SBU</td>
-        <!--    </tr>-->
-<!--    <tr>-->
-<!--        <td style="text-align: right; width: 17%"></td>-->
-<!--        <td style="text-align: left; width:20%; ">&nbsp;<sup>&nbsp;</sup>&nbsp;<sup>2&nbsp;&nbsp;</sup>Meta AI</td>-->
     </tr>
     </tbody></table>
 
     <table width="999" border="0" align="center" class="menu" style="margin-bottom: 8px;">
       <tbody>
         <tr>
-<!--          <td align="center">| <a href="paper_compressed.pdf">Paper</a> | <a href="sm/index.html">Supplementary Material</a> | <a href="https://github.com/omerbt/MultiDiffusion" target="_blank">Code</a> |</td>-->
-          <td align="center">| Paper | Dataset | Code | </td>
+          <td align="center">| Paper | Dataset (coming soon) | Code (coming soon)| </td>
         </tr>
       </tbody>
     </table>
+<div class="container">
+  <hr>
+  <p><span class="section"><b>Abstract</b></span> </p>
+    <div class="row" style="text-align:center; padding-left:1rem; padding-right:1rem; padding-bottom:1rem;">
+      <img src="imgs/annotations.png" class="text-center" style="width: 100%; max-width: 1100px" />
+      <p style="color:gray"> An example of three types of annotations based on LD-ConGR+ for three tasks: continuous 
+        gesture recognition, hand detection and hand segmentation. </p>
+    </div>
+      <p>
+        We present LD-ConGR+, a new RGB-D video dataset dedicated to facilitating research and application of applying 
+        gesture recognition on long-distance human-computer interaction scenarios (e.g., meetings and smart room), which 
+        has been largely overlooked before. Our LD-ConGR+ is distinctive from existing gesture datasets in three primary 
+        aspects. Firstly, it offers long-distance gestures up to 4m away from the camera, while existing datasets typically 
+        collect gestures within 1m from the camera. Secondly, LD-ConGR+ provides fine-grained annotations, including gesture 
+        categories and temporal localization for continuous gesture recognition, as well as hand bounding boxes and segmentation 
+        masks for potential long-distance hand-centric research. Thirdly, the dataset features high-quality videos, captured 
+        at high resolution (1280x720 for color streams and 640x576 for depth streams) and high frame rate (30 fps). On top 
+        of LD-ConGR+, we conducted extensive experiments and studies to evaluate our proposed baseline models on continuous 
+        gesture recognition and benchmark isolated gesture recognition, long-distance hand detection, and long-distance 
+        hand segmentation approaches. We anticipate that LD-ConGR+, together with our proposed baseline and evaluation 
+        analysis, will contribute to the advancement of long-distance gesture recognition as well as more general long-distance 
+        hand analysis research.
+      </p>
+
+      <!-- add highlight -->
+      <p style="color:forestgreen; font-size:20px";>Highlights:</p>
+        <details> 
+          <summary>Long-distance</summary>
+          As opposed to existing gesture recognition datasets in which the hands are recorded in less than 1 meter, we 
+          record gestures at distances of 1 to 4 meters from the subject to the camera.
+        </details> 
+        <details> <summary>Diversity</summary> 
+          The videos in LD-ConGR+ are collected from 33 voluntary participants who dress differently with various hand 
+          movement speeds in different illumination conditions.
+        </details> 
+        <details> <summary>High-quality</summary> 
+          The color and depth streams are captured synchronously at 30 fps with resolutions of 1280x720 and 640x576, 
+          respectively.
+        </details> 
+        <details> <summary>Fine-grained annotations</summary> 
+          Different fine-grained annotations for LD-ConGR+ makes it applicable for multiple research tasks on hand analysis, 
+          including isolated/continuous gesture recognition, hand detection and hand segmentation.
+        </Details>
+  <hr>
+  <p><span class="section"><b>Comparison and Statistics</b></span> </p>
+    <div class="row" style="text-align:center; padding-left:1rem; padding-right:1rem; padding-bottom:1rem;">
+      <img src="imgs/comparison_visualization.png" class="text-center" style="width: 100%; max-width: 1100px" />
+      <p style="color:gray"> Example frames from gesture recognition datasets. </p>
+      <img src="imgs/comparison_table.png" class="text-center" style="width: 100%; max-width: 1100px" />
+      <p style="color:gray"> Comparison of LD-ConGR+ and popular gesture recognition datasets. </p>
+      <img src="imgs/statistics.png" class="text-center" style="width: 60%; max-width: 1100px" />
+      <p style="color:gray"> Statistics of the proposed LD-ConGR+ dataset. </p>
+    </div>
+  <hr>
+  <p><span class="section"><b>Experiments</b></span> </p>
+    <div class="row" style="text-align:center; padding-left:1rem; padding-right:1rem; padding-bottom:1rem;">
+      <img src="imgs/method.png" class="text-center" style="width: 100%; max-width: 1100px" />
+      <p style="color:gray"> Architecture of our newly proposed method MMFT. </p>
+      <img src="imgs/result_continuous.png" class="text-center" style="width: 100%; max-width: 1100px" />
+      <p style="color:gray"> Results of our two baseline methods (ResNeXt-MMTM is proposed in our conference paper). </p>
+      <img src="imgs/result_continuous_vis.png" class="text-center" style="width: 100%; max-width: 1100px" />
+      <p style="color:gray"> Qualitative results on continuous gesture recognition task of LD-ConGR+. </p>
+      <img src="imgs/result_tem_iso.png" class="text-center" style="width: 90%; max-width: 1100px" />
+      <p style="color:gray"> Evaluation of temporal localization methods on continuous gesture recognition and action
+        recognition methods on isolated gesture recognition. </p>
+      <img src="imgs/result_det_seg.png" class="text-center" style="width: 90%; max-width: 1100px" />
+      <p style="color:gray"> Long-distance hand detection/segmentation performance on LD-ConGR+. </p>
+    </div>
+
+
 
 </body>
 </html>

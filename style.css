@@ -18,6 +18,22 @@ p a, table.affiliations a, table.menu a {
 	text-decoration: none;
 }
 
+summary{
+  color:forestgreen;
+}
+
+/* enlarge picture when hovering over the mouse */
+img {
+  width: 100%;
+  /* height: auto; */
+  transform: scale(1);
+  transition: transform 0.5s ease 0s;
+}
+
+img:hover {
+  transform: scale(1.40);
+}
+
 table.menu {
 	font-size: 13pt;
 	font-weight: 500;
